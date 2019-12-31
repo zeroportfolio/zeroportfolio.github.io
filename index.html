@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My Font -->
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- My Jquery -->
+    <script src="jquery.min.js"></script>
+
+    <!-- My JavaScript -->
+    <script>
+      function downloadCV() {
+        alert("Cv was downloaded")
+      }
+
+      // show hide My portfolio
+
+      $(document).ready(function() {
+        $("#development").click(function() {
+          $(".contentwritter").hide()
+          $(".logodesign").hide()
+          $(".photographer").hide()
+          $(".fullstackweb").show()
+          $(".uiuxdesign").show()
+          $(".webdesign").show()
+        })
+        $("#html").click(function() {
+          $(".contentwritter").hide()
+          $(".photographer").hide()
+          $(".fullstackweb").show()
+          $(".uiuxdesign").show()
+          $(".webdesign").show()
+          $(".logodesign").show()
+        })
+        $("#design").click(function() {
+          $(".contentwritter").hide()
+          $(".fullstackweb").hide()
+          $(".logodesign").show()
+          $(".webdesign").show()
+          $(".photographer").show()
+          $(".uiuxdesign").show()
+        })
+        $("#java").click(function() {
+          $(".uiuxdesign").hide()
+          $(".logodesign").hide()
+          $(".photographer").hide()
+          $(".fullstackweb").show()
+          $(".webdesign").show()
+          $(".contentwritter").show()
+        })
+        $("#all").click(function() {
+          $(".contentwritter").show()
+          $(".logodesign").show()
+          $(".fullstackweb").show()
+          $(".webdesign").show()
+          $(".photographer").show()
+          $(".uiuxdesign").show()
+        })
+      })
+
+      // portfolio button active
+      $(document).ready(function(){
+            $('.portfolio button').click(function(){
+              $('button').removeClass("active");
+              $(this).addClass("active");
+          });
+      });
+
+      // Back top
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
+          document.getElementById("toTop").style.display = "block";
+        } else {
+          document.getElementById("toTop").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+    </script>
+
+    <title>MY PORTFOLIO</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#skill">Skill</a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#team">Team</a>
+            <a class="nav-item nav-link" href="#blog">Blog</a>
+            <a class="nav-item nav-link" href="#footer">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid blue">
+      <div class="container">
+        <h3 class="display-4">HELLO <br> I'M AHMAD SUFYAN</h3>
+        <p class="lead">UI/UX Designer - Freelancer</p>
+        <button type="button" class="btn btn-light rounded-pill">Have a Project ? Let's Talk</button>
+      </div>
+    </div>
+    <!-- Akhir jumbotron -->
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3 class="font-weight-bold">ABOUT ME</h3>
+            <hr class="my-4 panjang">
+            <hr class="my-4 pendek">
+          </div>
+        </div>
+        <div class="row mt-2 mb-5">
+          <div class="col text-center">
+            <p>This is my personal profile page, here I tell you a glimpse of myself.</p>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-4 text-center">
+            <img src="img/ironman.png" alt="ironman">
+          </div>
+          <div class="col-lg-7 mt-4">
+            <p>My name is Ahmad Sufyan, born in Yogyakarta district, December 10, 2000. My hobby is to travel or touring. My expertise in the field of programmer and design is Java language, photoshop, after effects, illustrator, filmora, and others. In my expertise, programming is more prominent.</p>
+            <hr class="my-4 titik">
+            <div class="row">
+              <div class="col-lg">
+                <p><span class="font-weight-bold">NAME</span> : Ahmad Sufyan</p>
+                <p><span class="font-weight-bold">AGE</span> : 19</p>
+              </div>
+              <div class="col-lg">
+                <p><span class="font-weight-bold">JOB/TITLE</span> : Freelancer</p>
+                <p><span class="font-weight-bold">LOCATION</span> : Yogyakarta</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg">
+                <button type="button" class="btn btn-primary rounded-pill mt-3" id="downloadcv" onclick="downloadCV()">Download CV</button>
+              </div>
+              <div class="col-lg">
+                <button type="button" class="btn btn-primary rounded-pill mt-3">Hire Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir about -->
+
+    <!-- My skill -->
+    <section class="skill" id="skill">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3 class="font-weight-bold">MY SKILL</h3>
+            <hr class="my-4 panjang">
+            <hr class="my-4 pendek">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>This is a skill page that displays some of the skills that I have, you can see and <br> consider inviting cooperation based on my skills</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 ps">
+            <div class="thumbnail text-center">
+              <img src="img/photoshop.png" alt="adobe photoshop" class="mt-2">
+              <h4>Adobe Photoshop</h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3 ae">
+            <div class="thumbnail text-center">
+              <img src="img/aftereffect.png" alt="after effect" class="mt-2">
+              <h4>After Effect</h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3 ai">
+            <div class="thumbnail text-center">
+              <img src="img/illustrator.png" alt="adobe illustrator" class="mt-2">
+              <h4>Adobe Illustrator</h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir my skill -->
+
+    <!-- My Service -->
+    <section class="service" id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3 class="font-weight-bold">MY SERVICE</h3>
+            <hr class="my-4 panjang">
+            <hr class="my-4 pendek">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col text-center">
+            <p>This is a service page that displays some of the services that I have, you can see and <br> consider inviting cooperation based on the services I provide.</p>
+          </div>
+        </div>
+        <div class="row kotak justify-content-center">
+          <div class="col-lg-3 web">
+            <div class="thumbnail text-center">
+              <img src="img/website-design.png" alt="web design" class="mt-3">
+              <h4 class="mt-2">WEBSITE DESIGN</h4>
+              <p class="mt-4">We provide website design services for companies. For the design can be adjusted to the wishes of your company.</p>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3 logo">
+            <div class="thumbnail text-center">
+              <img src="img/logo-design.png" alt="logo design" class="mt-3">
+              <h4 class="mt-2">LOGO DESIGN</h4>
+              <p class="mt-4">We provide logo design services for companies. For the design can be adjusted to the wishes of your company.</p>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3 support">
+            <div class="thumbnail text-center">
+              <img src="img/support.png" alt="support" class="mt-3">
+              <h4 class="mt-2">SUPPORT</h4>
+              <p class="mt-4">We provide a consultant to be able to consult in order to facilitate the development of your company.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir my service -->
+
+    <!-- Overview -->
+    <section class="overview" id="overview">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg smile text-center">
+            <i class="fa-5x far fa-smile text-white"></i>
+            <p class="lead text-white"><span class="font-weight-bold">450</span> <br> Happy <br> Client</p>
+          </div>
+          <div class="col-lg finish text-center">
+            <i class="fa-5x fas fa-clipboard-list text-white"></i>
+            <p class="lead text-white"><span class="font-weight-bold">750</span> <br> Finished <br> Project</p>
+          </div>
+          <div class="col-lg hand text-center">
+            <i class="fa-5x fas fa-headphones-alt text-white"></i>
+            <p class="lead text-white"><span class="font-weight-bold">550</span> <br> Hand To <br> Work</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir overview -->
+
+    <!-- My portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3 class="font-weight-bold">MY PORTFOLIO</h3>
+            <hr class="my-4 panjang">
+            <hr class="my-4 pendek">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10 text-center">
+            <p>Here are some of the works we have made, you can see our works for your company reference. If you are interested in our work, then you can work with us to develop your project.</p>
+          </div>  
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-2 text-center mt-3">
+            <button type="button" class="btn btn-light active" id="all">ALL</button>
+          </div>
+          <div class="col-lg-2 text-center mt-3">
+            <button type="button" class="btn btn-light" id="development">DEVELOPMENT</button>
+          </div>
+          <div class="col-lg-2 text-center mt-3">
+            <button type="button" class="btn btn-light" id="html">HTML</button>
+          </div>
+          <div class="col-lg-2 text-center mt-3">
+            <button type="button" class="btn btn-light" id="design">DESIGN</button>
+          </div>
+          <div class="col-lg-2 text-center mt-3">
+            <button type="button" class="btn btn-light" id="java">JAVA</button>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg mt-5">
+            <div class="card text-center logodesign">
+              <a href="#modal1" data-toggle="modal">
+                <img src="img/portfolio-1.png" class="card-img-top" alt="...">
+                <div class="overlay">
+                  <h4>LOGO DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+              </a>
+              <!-- <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg mt-5">
+            <div class="card text-center webdesign">
+              <a href="#modal2" data-toggle="modal">
+                <img src="img/portfolio-2.png" class="card-img-top" alt="...">
+                <div class="overlay">
+                  <h4>WEB DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+              </a>
+              <!-- <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg mt-5">
+            <div class="card text-center photographer">
+              <a href="#modal3" data-toggle="modal">
+                <img src="img/portfolio-3.png" class="card-img-top" alt="...">
+                <div class="overlay">
+                  <h4>PHOTOGRAPHER</h4>
+                  <p>Photographer</p>
+                </div>
+              </a>
+              <!-- <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg mt-5">
+            <div class="card text-center uiuxdesign">
+              <a href="#modal4" data-toggle="modal">
+                <img src="img/portfolio-4.png" class="card-img-top" alt="...">
+                <div class="overlay">
+                  <h4>UI/UX DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+              </a>
+              <!-- <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg mt-5">
+            <div class="card text-center fullstackweb">
+              <a href="#modal5" data-toggle="modal">
+                <img src="img/portfolio-5.png" class="card-img-top" alt="...">
+                <div class="overlay">
+                  <h4>FULL STACK WEB</h4>
+                  <p>Programmer</p>
+                </div>
+              </a>
+              <!-- <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg mt-5">
+            <div class="card text-center contentwritter">
+              <a href="#modal6" data-toggle="modal">
+                <img src="img/portfolio-6.png" class="card-img-top" alt="...">
+                <div class="overlay">
+                  <h4>CONTENT WRITTER</h4>
+                  <p>Writter</p>
+                </div>
+              </a>
+              <!-- <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir my portfolio -->
+
+    <!-- Slider -->
+    <section class="slider" id="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner text-center text-white">
+                <div class="carousel-item active">
+                  <img src="img/peter.jpg" alt="Peter" class="rounded-circle" width="200px">
+                  <h4 class="mt-3 font-weight-bold">Oskha Rafid</h4>
+                  <span>Designer</span>
+                  <p class="text-white mt-4">I am a professional designer, I have had the experience of being a designer <br> for five years, I am ready to work for you.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/captain.jpg" alt="Captain" class="rounded-circle" width="200px">
+                  <h4 class="mt-3 font-weight-bold">Ahmad Naim</h4>
+                  <span>Programmer</span>
+                  <p class="text-white mt-4">I am a professional programmer, I have had the experience of being a programmer <br> for five years, I am ready to work for you.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/thor.jpg" alt="Thor" class="rounded-circle" width="200px">
+                  <h4 class="mt-3 font-weight-bold">Oskar</h4>
+                  <span>Freelancer</span>
+                  <p class="text-white mt-4">I am a professional freelancer, I have experience as a freelancer <br> for five years, I am ready to work for you.</p>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir slider -->
+
+    <!-- My Team -->
+    <section class="team" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3 class="font-weight-bold">MY TEAM</h3>
+            <hr class="my-4 panjang">
+            <hr class="my-4 pendek">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>This is a list of our team who are ready to serve you and help the project that you are making, if you need help, <br> please contact us to work on your project.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="img/ironman2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">AHMAD SUFYAN</h5>
+                <h6>Founder</h6>
+              </div>
+              <div class="overlay text-dark">
+                <h5 class="card-title font-weight-bold">AHMAD SUFYAN</h5>
+                <h6 class="mb-4 lead">Founder</h6>
+                <p>Adobe Photoshop</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <p>After Effect</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <p>Adobe Illustrator</p>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                <div class="sosmed text-center" style="letter-spacing: 5px;">
+                  <span><a href=""><i class="fa-2x fab fa-facebook-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-twitter-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-github-square"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="img/peter.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">OSKHA RAFID</h5>
+                <h6>Co Founder</h6>
+              </div>
+              <div class="overlay text-dark">
+                <h5 class="card-title font-weight-bold">OSKHA RAFID</h5>
+                <h6 class="mb-4 lead">Co Founder</h6>
+                <p>Adobe Photoshop</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                <p>After Effect</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+                <p>Adobe Illustrator</p>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <div class="sosmed text-center" style="letter-spacing: 5px;">
+                  <span><a href=""><i class="fa-2x fab fa-facebook-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-twitter-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-github-square"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="img/captain.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">AHMAD NAIM</h5>
+                <h6>CTO</h6>
+              </div>
+              <div class="overlay text-dark">
+                <h5 class="card-title font-weight-bold">AHMAD NAIM</h5>
+                <h6 class="mb-4 lead">CTO</h6>
+                <p>Adobe Photoshop</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <p>After Effect</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+                <p>Adobe Illustrator</p>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <div class="sosmed text-center" style="letter-spacing: 5px;">
+                  <span><a href=""><i class="fa-2x fab fa-facebook-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-twitter-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-github-square"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="img/thor.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">OSKAR</h5>
+                <h6>Marketing Officer</h6>
+              </div>
+              <div class="overlay text-dark">
+                <h5 class="card-title font-weight-bold">OSKAR</h5>
+                <h6 class="mb-4 lead">Marketing Officer</h6>
+                <p>Adobe Photoshop</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <p>After Effect</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <p>Adobe Illustrator</p>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                <div class="sosmed text-center" style="letter-spacing: 5px;">
+                  <span><a href=""><i class="fa-2x fab fa-facebook-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-twitter-square"></i></a></span> 
+                  <span><a href=""><i class="fa-2x fab fa-github-square"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir my team -->
+
+    <!-- brand -->
+    <section class="brand" id="brand">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-2">
+            <img src="img/brand-1.png" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/brand-2.png" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/brand-3.png" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/brand-4.png" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/brand-2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir brand -->
+
+    <!-- Blog post -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3 class="font-weight-bold">BLOG POST</h3>
+            <hr class="my-4 panjang">
+            <hr class="my-4 pendek">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>This is our blog page which contains some posts related to our work, you can read our writings, <br> and we hope you are interested in that.</p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg">
+            <div class="card">
+              <img src="img/bisnisplan.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">3 Steps to a Perfectly Written Business Plan</h5>
+                <p class="card-text">Your business plan is how investors and potential partners see that you know everything you can about your industry.</p>
+                <a href="blog/article3.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card">
+              <img src="img/pengusaha.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Why Entrepreneurship Alone Isn't Enough To Make You Really Rich </h5>
+                <p class="card-text">Entrepreneurs become entrepreneurs for a number of reasons. Being your own boss ranks high on the list.</p>
+                <a href="blog/article2.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card">
+              <img src="img/startup.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">How to Weather the Storms of a Startup </h5>
+                <p class="card-text">Running a startup is not all sunny days and clear skies. In fact, first-time founders and serial entrepreneurs alike will tell you.</p>
+                <a href="blog/article1.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir blog post -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h3 class="text-white mt-4">AHMAD SUFYAN</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center contact">
+          <div class="col-md-3">
+            <i class="fas fa-phone-square"></i><span> Hotline(+021) 456 234 565</span>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-envelope-open"></i><span> fyn@zerozero.com</span>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-street-view"></i><span> Special Region of Yogyakarta</span>
+          </div>
+        </div>
+        <hr>
+        <div class="row text-white justify-content-center text-center sosmed">
+          <div class="col" style="letter-spacing: 8px;">
+            <span><i class="fa-2x fab fa-facebook-square"></i></span>
+            <span><i class="fa-2x fab fa-twitter-square"></i></span> 
+            <span><i class=" fa-2x fab fa-github-square"></i></span> 
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col text-white text-center">
+            <p>Copyright 2019 ZeroZero, All Right Reserved <br> <span style="font-size: 14px;">Made with <i class="fas fa-heart text-danger"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir footer -->
+
+    <!-- Back top -->
+    <div class="backtop text-center" id="toTop" onclick="topFunction()"><i class="text-white fa-2x fas fa-arrow-circle-up"></i></div>
+
+    <!-- My Modal 1 -->
+    <div class="modal fade bd-example-modal-lg" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="text-center mt-3">LOGO DESIGN</h3>
+            <hr class="my-4">
+            <p>These are some of the logo designs that I and my team have ever made, you can see and choose the logo design that you like. If you like our logo design, you will be able to offer cooperation to us to work on logo design projects for your company and personally.</p>
+            <img class="mb-3" src="img/logdes.jpg" alt=".." width="100%">
+            <img class="mb-3" src="img/logdes2.jpg" alt=".." width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Modal 2 -->
+    <div class="modal fade bd-example-modal-lg" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="text-center mt-3">WEB DESIGN</h3>
+            <hr class="my-4">
+            <p>Here are some website designs that I and my team have made, you can see and choose the website design that you like. If you like our website design, you will be able to offer our cooperation to work on website design projects for your company and in person.</p>
+            <img class="mb-3" src="img/webdes.png" alt=".." width="100%">
+            <img class="mb-3" src="img/webdes2.png" alt=".." width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Modal 3 -->
+    <div class="modal fade bd-example-modal-lg" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="text-center mt-3">PHOTOGRAPHER</h3>
+            <hr class="my-4">
+            <p>Here are some photos taken by me and my team to do for a project, you can see and choose photos that you like. If you like our work, you will be able to offer our cooperation to work on photography projects for your company and in person.</p>
+            <img class="mb-3" src="img/photo.jpg" alt=".." width="100%">
+            <img class="mb-3" src="img/photo2.jpg" alt=".." width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Modal 4 -->
+    <div class="modal fade bd-example-modal-lg" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="text-center mt-3">UI/UX DESIGN</h3>
+            <hr class="my-4">
+            <p>Here are some UI / UX designs that I and my team have made, you can see and choose the UI / UX design that you like. If you like our UI / UX design, you will be able to offer our collaboration to work on UI / UX design projects for your company and in person.</p>
+            <img class="mb-3" src="img/uiux.jpg" alt=".." width="100%">
+            <img class="mb-3" src="img/uiux2.png" alt=".." width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Modal 5 -->
+    <div class="modal fade bd-example-modal-lg" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="text-center mt-3">FULL STACK WEB</h3>
+            <hr class="my-4">
+            <p>Here are some website code that I and my team have made, you can see and choose the website code that you like. If you like our website code, you will be able to offer our cooperation to work on website code projects for your company and in person.</p>
+            <img class="mb-3" src="img/code.jpg" alt=".." width="100%">
+            <img class="mb-3" src="img/code2.jpg" alt=".." width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Modal 6 -->
+    <div class="modal fade bd-example-modal-lg" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="text-center mt-3">CONTENT WRITTER</h3>
+            <hr class="my-4">
+            <p>Here are some content writing designs that my team and I have made, you can see and choose the content design that you like. If you like our content design, you will be able to offer us cooperation to work on content writing projects for your company and personally.</p>
+            <img class="mb-3" src="img/writter.jpg" alt=".." width="100%">
+            <img class="mb-3" src="img/writter2.jpg" alt=".." width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
